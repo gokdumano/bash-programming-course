@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Modify the previous script to accept an unlimited number of files and directories as arguments.
+# Hint: You'll want to use a special variable.
+
 for FNAME in $@
 do
 	if [ -f $FNAME ]; then
