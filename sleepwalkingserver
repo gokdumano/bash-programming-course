@@ -1,0 +1,10 @@
+#!/bin/bash
+PIDFILE="/tmp/sleepwalkingserver.pid"
+
+trap "rm $PIDFILE; exit" SIGHUP SIGINT SIGTERM
+echo "$$" > $PIDFILE
+
+while true
+do
+	:
+done
